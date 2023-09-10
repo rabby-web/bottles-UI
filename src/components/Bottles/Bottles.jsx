@@ -22,7 +22,10 @@ const Bottles = () => {
 
     return (
         <div className="bottles-container">
-            <h2>Bottles Here: {bottles.length}</h2>
+            <h2>Bottles Available : {bottles.length}</h2>
+            <hr />
+            <p>Select Product Item: {card.length}</p>
+            <hr />
             <div className="bottles">
             {
                 bottles.map(bottle => <Bottle key={bottle.id} bottle={bottle} handleAddToCard={handleAddToCard}></Bottle>)
