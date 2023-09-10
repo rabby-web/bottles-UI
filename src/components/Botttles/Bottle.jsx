@@ -5,8 +5,9 @@ const Bottle = ({bottle}) => {
     return (
         <div className="bottle">
             <img src={img} alt="" />
-            <h3>name: {name}</h3>
+            <h3>Name: {name}</h3>
             <p>Price: {price}</p>
+            <p>Ratings: {ratings}</p>
         </div>
     );
 };
