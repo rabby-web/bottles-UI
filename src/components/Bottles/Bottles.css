@@ -1,0 +1,25 @@
+.bottles-container{
+    margin: 2rem 8rem;
+}
+.bottles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media (min-width: 556px) and (max-width: 996px) {
+    .bottles-container{
+        margin: 1rem 4rem;
+    }
+    .bottles{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+@media  (max-width: 555px) {
+    .bottles-container{
+        margin: 1rem 1rem;
+    }
+    .bottles{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
