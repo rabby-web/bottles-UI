@@ -1,4 +1,4 @@
-.bottles-container{
+.bottles-container, .nine{
     margin: 2rem 8rem;
     text-align: center;
     line-height: 1.7rem;
@@ -11,7 +11,7 @@
 }
 
 @media (min-width: 556px) and (max-width: 996px) {
-    .bottles-container{
+    .bottles-container, .nine{
         margin: 1rem 4rem;
     }
     .bottles{
@@ -19,7 +19,7 @@
     }
   }
 @media  (max-width: 555px) {
-    .bottles-container{
+    .bottles-container, .nine{
         margin: 1rem 1rem;
     }
     .bottles{

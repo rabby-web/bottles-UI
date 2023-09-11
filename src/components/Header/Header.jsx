@@ -1,7 +1,10 @@
+import './Header.css'
 const Header = () => {
     return (
         <div>
-            <h2>Memorable Water Bottle</h2>
+            <div className="nine">
+                 <h1>Bottles<span>Memorable Water</span></h1>
+            </div>
         </div>
     );
 };
