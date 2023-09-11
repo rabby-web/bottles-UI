@@ -15,9 +15,22 @@ const Bottles = () => {
 
     // load card from LS
     useEffect( ()=>{
-        console.log(bottles.length)
-        const storedCard = getStoreCard();
-        console.log(storedCard)
+        console.log('call the useEffect',bottles.length)
+        if(bottles.length){
+            const storedCard = getStoreCard();
+            console.log(storedCard)
+
+                const savedCard = []
+            for(const id of storedCard){
+                console.log(id)
+                const bottle = bottles.find(bottle => bottle.id === id)
+                if(bottle){
+                    savedCard.push(bottle)
+                }
+            }
+            console.log(savedCard)
+            setCart(savedCard)
+        }
     }, [bottles])
 
     const handleAddToCard = bottle => {
