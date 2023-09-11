@@ -1,7 +1,7 @@
 import './Bottle.css'
 
 const Bottle = ({bottle, handleAddToCard}) => {
-    const {name, img, price, ratings, ratingsCount, seller, shipping, stock} = bottle;
+    const {name, img, price, ratings} = bottle;
     return (
         <div className="bottle">
             <img src={img} alt="" />
