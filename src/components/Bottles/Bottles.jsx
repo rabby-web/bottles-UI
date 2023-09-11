@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Bottle from "../Botttles/Bottle";
 import './Bottles.css'
 import { addToLS, getStoreCard } from "../../utilities/localstorage";
+import Card from "../Card/Card";
 
 const Bottles = () => {
     const [bottles, setBottles] = useState([]);
@@ -45,7 +46,10 @@ const Bottles = () => {
         <div className="bottles-container">
             <h2>Bottles Available : {bottles.length}</h2>
             <hr />
-            <p>Select Product Item: {card.length}</p>
+            {/* card */}
+            <div>
+                <Card card={card}></Card>
+            </div>
             <hr />
             <div className="bottles">
             {
